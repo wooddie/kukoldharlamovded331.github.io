@@ -1,0 +1,457 @@
+/*MADE BY KANAPIYA BAZARBAYEV*/
+body, h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+video {
+    width: 60%;
+    height: auto;
+    border: 1px solid #5b4aa0;
+    border-radius: 2em;
+}
+
+video:focus {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+audio {
+    mix-blend-mode: color-burn;
+    inline-size: -webkit-fill-available;
+}
+
+audio:focus {
+    outline: none;
+}
+
+hr {
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+}
+
+header {
+    background-color: #87509c;
+    color: #ffffff;
+    padding: 2em 0;
+}
+
+.nav {
+    line-height: 4em;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    float: right;
+}
+
+.nav li {
+    display: inline
+}
+
+.nav a {
+    padding: 1em;
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffffff;
+    border: 1px solid #87509c;
+    border-radius: 10px;
+}
+
+.nav a:hover {
+    background-color: #643a79;
+    transition: 0.5s;
+}
+
+.page1 {
+    background-color: #87509c;
+    text-align: center;
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
+
+.page1 h1 {
+    padding-bottom: 1em;
+    color: #ffffff;
+    margin: 0;
+}
+
+.header-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button1 {
+    color: #ffffff;
+    background-color: #eb7d4b;
+    padding: 1.250em;
+    padding-left: 3em;
+    padding-right: 3em;
+    border: 0.3em solid #eb7d4b;
+    border-bottom: 0.3em solid #c55725;
+    border-radius: 0.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.page2 {
+    background-color: #17c2a4;
+    color: #ffffff;
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
+
+.text-box {
+    text-align: center;
+}
+
+.hr1 {
+    width: 4.2em;
+    height: 0.25em;
+    background-color: #14a58c;
+    border: none;
+}
+
+.text-box p {
+    font-weight: bold;
+}
+
+.cards {
+    text-align: center;
+}
+
+.cards1 , .cards2 , .cards3 , .cards4 {
+    display: inline-block;
+    text-align: center;
+    margin: 2em;
+    margin-top: 3em;
+}
+
+.page4 {
+    background-color: #ffffff;
+    color: #3c4761;
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
+
+.hr3 {
+    width: 4.2em;
+    height: 0.25em;
+    background-color: #dfe8ed;
+    border: none;
+}
+
+.skills {
+    text-align: center;
+}
+
+.skill1 , .skill2 , .skill3 , .skill4 {
+    display: inline-block;
+    text-align: center;
+    margin: 2em;
+    margin-top: 3em;
+}
+
+.circle {
+    display: block;
+    margin: auto;
+}
+
+circle {
+  fill: rgba(0,0,0,0);
+  stroke: #eee;
+  stroke-width: 15;
+  stroke-dasharray: 408px 408px;
+}
+
+circle:nth-child(2n) {
+  fill: rgba(0,0,0,0);
+  stroke: #30bae7;
+  stroke-width: 15;
+}
+
+.page5 {
+    background-color: #ffdd99;
+    color: #393939;
+    padding-top: 4em;
+    padding-bottom: 3em;
+}
+
+.hr4 {
+    width: 4.2em;
+    height: 0.25em;
+    background-color: #e5c37f;
+    border: none;
+}
+
+.portfolio-filter {
+    margin-top: 1.8%;
+    margin-bottom: 1.8%;
+    text-align: center;
+}
+
+.button_port {
+    background: #000;
+    border-radius: 4px;
+    border: 0.0625rem solid transparent;
+    color: #393939;
+    cursor: pointer;
+    font-size: 15px;
+    margin: 0.3125rem;
+    outline: none;
+    padding: 0.625rem 1.875rem;
+}
+  
+.portfolio-filter button:hover {
+    background-color: #fff;
+    color: #393939;
+  }
+
+.portfolio-filter button:active {
+    background-color: #fff;
+    color: #393939;
+}
+
+.portfolio {
+    text-align: center;
+}
+
+.portfolio1 , .portfolio2 , .portfolio3 , .portfolio4 {
+    display: inline-block;
+    text-align: center;
+    margin: 4em;
+    margin-top: 0;
+    margin-bottom: 2em
+}
+
+.portfolio h4 {
+    font-weight: lighter;
+    margin-top: 2em;
+    margin-bottom: 4em;
+}
+
+.portfolio-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button2 {
+    color: #ffffff;
+    background-color: #17c2a4;
+    padding: 1.250em;
+    padding-left: 3em;
+    padding-right: 3em;
+    border: 0.3em solid #17c2a4;
+    border-bottom: 0.3em solid #009c7e;
+    border-radius: 0.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.page7 {
+    background-color: #3c5499;
+    color: #ffffff;
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
+
+.hr6 {
+    width: 4.2em;
+    height: 0.25em;
+    background-color: #273a71;
+    border: none;
+}
+
+.textarea-box {
+    margin-top: 2em;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.git_name {
+    background-color: #273a71;
+    border: 1px solid #273a71;
+    border-radius: 0.3em;
+    padding: 1em;
+    margin-right: auto;
+    font-size: medium;
+    width: 30%;
+}
+
+.git_name:focus {
+    outline: none;
+    color: #ffffff;
+}
+
+.git_mail {
+    background-color: #273a71;
+    border: 1px solid #273a71;
+    border-radius: 0.3em;
+    padding: 1em;
+    margin-left: auto;
+    font-size: medium;
+    width: 30%;
+}
+
+.git_mail:focus {
+    outline: none;
+    color: #ffffff;
+}
+
+.git_message {
+    background-color: #273a71;
+    border: 1px solid #273a71;
+    border-radius: 0.3em;
+    margin-top: 1em;
+    padding: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    width: 65%;
+}
+
+.git_message:focus {
+    outline: none;
+    color: #ffffff;
+}
+
+.git_button_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.git_button {
+    color: #ffffff;
+    background-color: #30bae7;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border-bottom: 0.2em solid #0a94c1;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.page8 {
+    background-color: #8C62A8;
+    color: white;
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
+
+.hr7 {
+    width: 4.2em;
+    height: 0.25em;
+    background-color: #734a90;
+    border: none;
+}
+
+.music-box {
+    text-align: center;
+}
+
+.music1 , .music2 {
+    display: inline-block;
+    margin: 4%;
+    width: 20em;
+}
+
+.cover {
+    width: 20em;
+    height: 20em;
+    border: 1px solid #8C62A8;
+    border-radius: 2em;
+}
+
+.page9 {
+    background-color: #5b4aa0;
+    color: #ffffff;
+    padding-top: 4em;
+    padding-bottom: 4em;
+    text-align: center;
+}
+
+.hr8 {
+    width: 4.2em;
+    height: 0.25em;
+    background-color: #48388e;
+    border: none;
+}
+
+.video {
+    margin-top: 2em;
+}
+
+.page10 {
+    background-color: #17c2a4;
+    color: #BCEBDD;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.hr9 {
+    width: 4.2em;
+    height: 0.25em;
+    background-color: #009c7e;
+    border: none;
+}
+
+table {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    text-align: left;
+    border-collapse: separate;
+    border-spacing: 5px;
+    background: #ECE9E0;
+    color: #656665;
+    border: 16px solid #ECE9E0;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 1%;
+}
+
+th {
+    font-size: 18px;
+    padding: 10px;
+}
+
+td {
+    background: #F5D7BF;
+    padding: 10px;
+}
+td a {
+    color: black;
+}
+
+.footer {
+    background-color: #344b8e;
+    text-align: center;
+    padding: 3em 0;
+}
+
+.footer a {
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    margin: 1em;
+}
+
+.footer a:hover {
+    color: #30bae7;
+}
+
+#logo {
+    vertical-align: middle;
+    margin-left: 4em;
+}
+/*MADE BY KANAPIYA BAZARBAYEV*/
