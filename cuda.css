@@ -284,7 +284,7 @@ circle:nth-child(2n) {
     padding: 1em;
     margin-right: auto;
     font-size: medium;
-    width: 30%;
+    width: 33%;
 }
 
 .git_name:focus {
@@ -299,7 +299,7 @@ circle:nth-child(2n) {
     padding: 1em;
     margin-left: auto;
     font-size: medium;
-    width: 30%;
+    width: 33%;
 }
 
 .git_mail:focus {
