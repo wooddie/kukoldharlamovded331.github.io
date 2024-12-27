@@ -16,3 +16,21 @@ var clickButton = document.querySelector('.portfolio-filter');
 clickButton.ondblclick = function() {
     window.location = 'kkk/joke.html';
 }
+
+var sb = {
+    init: function () {
+        sb.listeners();
+    },
+    listeners: function () {
+        $("audio").on("play", function (e) {
+            $("audio").each(function () {
+                if (this !== e.target) {
+                    this.pause();
+                    this.currentTime = 0;
+                }
+            });
+        });
+    }
+};
+
+$(document).ready(sb.init);
