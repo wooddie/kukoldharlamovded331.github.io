@@ -17,6 +17,9 @@ clickButton.ondblclick = function() {
     window.location = 'kkk/joke.html';
 }
 
+/*
+УПРАВЛЕНИЕ АУДИО
+*/
 var sb = {
     init: function () {
         sb.listeners();
