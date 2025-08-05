@@ -48,12 +48,21 @@ header {
     background-color: #87509c;
     color: #ffffff;
     padding: 2em 0;
+    /* Убираем старый padding и задаем его через flexbox, чтобы не было конфликтов */
+    display: flex;
+    /* Делаем header flex-контейнером */
+    justify-content: space-between;
+    /* Распределяем элементы по краям: лого слева, навигация справа */
+    align-items: center;
+    /* Выравниваем элементы по центру по вертикали */
+    padding: 1em 2em;
+    /* Добавляем внутренние отступы для красоты */
 }
 
 
+/* Стили для гамбургер-меню */
 .hamburger-menu {
-    display: block;
-    /* Показываем на мобильных */
+    display: none;
     cursor: pointer;
     padding: 10px;
 }
@@ -61,17 +70,19 @@ header {
 .bar {
     width: 30px;
     height: 3px;
-    background-color: black;
+    background-color: white;
+    /* Изменил цвет на белый, чтобы он был виден на фоне хедера */
     margin: 6px 0;
     transition: 0.4s;
 }
 
+/* Стили для основного меню */
 .nav-links {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: none;
-    /* Скрываем по умолчанию */
+    display: flex;
+    /* Делаем навигационное меню flex-контейнером для горизонтального выравнивания ссылок */
 }
 
 .nav-links li {
@@ -80,28 +91,38 @@ header {
 
 .nav-links li a {
     text-decoration: none;
-    color: black;
+    color: white;
+    /* Изменил цвет на белый, чтобы он был виден на фоне хедера */
+    padding: 10px;
 }
 
 /* Медиазапрос для мобильных */
 @media (max-width: 768px) {
-    .hamburger-menu {
-        display: block;
-        /* Показываем на мобильных */
-    }
-
     .nav-links {
         display: none;
-        /* Скрываем по умолчанию */
+        /* Скрываем основное меню на мобильных */
+        flex-direction: column;
+        /* Выравниваем ссылки по вертикали */
+        background-color: #87509c;
+        /* Задаем фон для выпадающего меню */
+        position: absolute;
+        /* Делаем меню выпадающим */
+        top: 60px;
+        /* Позиционируем его под хедером */
+        right: 0;
+        width: 100%;
     }
 
     .nav-links.show-menu {
+        display: flex;
+        /* Показываем выпадающее меню при клике */
+    }
+
+    .hamburger-menu {
         display: block;
-        /* Показываем при клике */
+        /* Показываем гамбургер-меню на мобильных */
     }
 }
-
-
 
 .page1 {
     background-color: #87509c;
@@ -495,9 +516,11 @@ td a {
     color: #30bae7;
 }
 
+/* Стили для логотипа, который должен быть в HTML */
 #logo {
     vertical-align: middle;
-    margin-left: 4em;
+    margin: 0;
+    /* Убираем лишние отступы, чтобы flexbox работал правильно */
 }
 
 /*MADE BY KANAPIYA BAZARBAYEV*/
