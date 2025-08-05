@@ -1,5 +1,12 @@
 /*MADE BY KANAPIYA BAZARBAYEV*/
-body, h1, h2, h3, h4, h5, h6, p {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -43,31 +50,58 @@ header {
     padding: 2em 0;
 }
 
-.nav {
-    line-height: 4em;
-    margin: 0;
+
+.hamburger-menu {
+    display: block;
+    /* Показываем на мобильных */
+    cursor: pointer;
+    padding: 10px;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.nav-links {
+    list-style: none;
     padding: 0;
-    list-style-type: none;
-    float: right;
+    margin: 0;
+    display: none;
+    /* Скрываем по умолчанию */
 }
 
-.nav li {
-    display: inline
+.nav-links li {
+    padding: 10px;
 }
 
-.nav a {
-    padding: 1em;
+.nav-links li a {
     text-decoration: none;
-    font-weight: bold;
-    color: #ffffff;
-    border: 1px solid #87509c;
-    border-radius: 10px;
+    color: black;
 }
 
-.nav a:hover {
-    background-color: #643a79;
-    transition: 0.5s;
+/* Медиазапрос для мобильных */
+@media (max-width: 768px) {
+    .hamburger-menu {
+        display: block;
+        /* Показываем на мобильных */
+    }
+
+    .nav-links {
+        display: none;
+        /* Скрываем по умолчанию */
+    }
+
+    .nav-links.show-menu {
+        display: block;
+        /* Показываем при клике */
+    }
 }
+
+
 
 .page1 {
     background-color: #87509c;
@@ -127,7 +161,10 @@ header {
     text-align: center;
 }
 
-.cards1 , .cards2 , .cards3 , .cards4 {
+.cards1,
+.cards2,
+.cards3,
+.cards4 {
     display: inline-block;
     text-align: center;
     margin: 2em;
@@ -152,7 +189,10 @@ header {
     text-align: center;
 }
 
-.skill1 , .skill2 , .skill3 , .skill4 {
+.skill1,
+.skill2,
+.skill3,
+.skill4 {
     display: inline-block;
     text-align: center;
     margin: 2em;
@@ -165,16 +205,16 @@ header {
 }
 
 circle {
-  fill: rgba(0,0,0,0);
-  stroke: #eee;
-  stroke-width: 15;
-  stroke-dasharray: 408px 408px;
+    fill: rgba(0, 0, 0, 0);
+    stroke: #eee;
+    stroke-width: 15;
+    stroke-dasharray: 408px 408px;
 }
 
 circle:nth-child(2n) {
-  fill: rgba(0,0,0,0);
-  stroke: #30bae7;
-  stroke-width: 15;
+    fill: rgba(0, 0, 0, 0);
+    stroke: #30bae7;
+    stroke-width: 15;
 }
 
 .page5 {
@@ -208,11 +248,11 @@ circle:nth-child(2n) {
     outline: none;
     padding: 0.625rem 1.875rem;
 }
-  
+
 .portfolio-filter button:hover {
     background-color: #fff;
     color: #393939;
-  }
+}
 
 .portfolio-filter button:active {
     background-color: #fff;
@@ -223,7 +263,10 @@ circle:nth-child(2n) {
     text-align: center;
 }
 
-.portfolio1 , .portfolio2 , .portfolio3 , .portfolio4 {
+.portfolio1,
+.portfolio2,
+.portfolio3,
+.portfolio4 {
     display: inline-block;
     text-align: center;
     margin: 4em;
@@ -361,7 +404,8 @@ circle:nth-child(2n) {
     text-align: center;
 }
 
-.music1 , .music2 {
+.music1,
+.music2 {
     display: inline-block;
     margin: 4%;
     width: 20em;
@@ -455,4 +499,5 @@ td a {
     vertical-align: middle;
     margin-left: 4em;
 }
+
 /*MADE BY KANAPIYA BAZARBAYEV*/
